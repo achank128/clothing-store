@@ -1,0 +1,68 @@
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 64px 8px;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+  h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .contact {
+    padding: 0 8px;
+    p {
+      margin-bottom: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      padding: 8px 16px;
+      &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+    a {
+      color: #000;
+      text-decoration: underline;
+      margin-bottom: 8px;
+    }
+  }
+  .store {
+    padding: 0 8px;
+    text-align: left;
+    p {
+      margin-bottom: 8px;
+    }
+    .info-cocial {
+      font-size: 18px;
+    }
+  }
+}
+.footer-end {
+  text-align: center;
+  padding: 24px 0;
+  background-color: #000;
+  color: #fff;
+  a {
+    text-decoration: underline;
+    color: #f1f1f1;
+  }
+}

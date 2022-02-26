@@ -1,0 +1,501 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.show {
+  display: block !important;
+}
+
+#nav-mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#nav-mobile .nav-mobile-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 16px;
+}
+
+#nav-mobile .nav-mobile-content h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  line-height: 1.5;
+}
+
+#nav-mobile .nav-mobile-content i {
+  font-size: 20px;
+}
+
+#navbar {
+  width: 20%;
+}
+
+#navbar .logo {
+  padding: 16px;
+}
+
+#navbar .logo h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  line-height: 1.5;
+}
+
+#navbar .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 64px 0;
+  text-align: left;
+}
+
+#navbar .list a {
+  font-size: 16px;
+  color: #999;
+  padding: 8px 16px;
+}
+
+#navbar .list a:hover {
+  background-color: #ccc !important;
+  color: black;
+}
+
+#navbar .list .active {
+  color: black;
+}
+
+#navbar .list .active i {
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#navbar .list .list-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 24px;
+}
+
+#navbar .list .list-inside a {
+  font-size: 14px !important;
+}
+
+#navbar .list .list-inside .active-inside {
+  color: black;
+  background-color: #f1f1f1;
+}
+
+#navbar .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#navbar .contact a {
+  font-weight: 300;
+  line-height: 1.5;
+  color: black;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+#navbar .contact a:hover {
+  font-weight: 500;
+}
+
+.content {
+  width: 80%;
+}
+
+.content .items-list .count-items {
+  padding-left: 16px;
+  color: #888;
+  font-size: 15px;
+  margin: 15px 0;
+  font-weight: 200;
+}
+
+.content .items-list .items {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .items-list .item {
+  width: 25%;
+  padding: 0 16px 15px 16px;
+}
+
+.content .items-list .item img {
+  width: 100%;
+  background-color: #b4b4b4;
+}
+
+.content .items-list .item p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.content .subscribe {
+  padding: 32px 16px;
+  background-color: #000;
+  color: #fff;
+}
+
+.content .subscribe .sub-title {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.content .subscribe p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.content .subscribe input {
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+}
+
+.content .subscribe input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.content .subscribe input:-ms-input-placeholder {
+  color: #999;
+}
+
+.content .subscribe input::-ms-input-placeholder {
+  color: #999;
+}
+
+.content .subscribe input::placeholder {
+  color: #999;
+}
+
+.content .subscribe button {
+  color: #fff;
+  background-color: #f44336;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 16px 0;
+  padding: 8px 16px;
+}
+
+.content .subscribe button:hover {
+  cursor: pointer;
+  font-weight: 200 !important;
+  background-color: #ccc;
+  color: #000;
+}
+
+.name-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 16px;
+  font-size: 24px;
+  border-bottom: 0 0 1px coral;
+}
+
+.name-title h3 {
+  font-weight: 300;
+}
+
+.name-title i {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+  padding: 0 16px;
+}
+
+header img {
+  width: 100%;
+}
+
+header .text {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  color: #fff;
+}
+
+header .text h1 {
+  font-weight: 400;
+  font-size: 66px;
+  margin-bottom: 10px 0;
+}
+
+header .text h2 {
+  font-weight: 300;
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+header .text button {
+  background-color: #000;
+  color: #f1f1f1;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+header .text button:hover {
+  background-color: #ccc;
+  color: #000;
+  font-weight: 200;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 64px 8px;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+footer h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+footer .contact {
+  padding: 0 8px;
+}
+
+footer .contact p {
+  margin-bottom: 10px;
+}
+
+footer .contact input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+footer .contact button {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+}
+
+footer .contact button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+footer .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 8px;
+}
+
+footer .about a {
+  color: #000;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+footer .store {
+  padding: 0 8px;
+  text-align: left;
+}
+
+footer .store p {
+  margin-bottom: 8px;
+}
+
+footer .store .info-cocial {
+  font-size: 18px;
+}
+
+.footer-end {
+  text-align: center;
+  padding: 24px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-end a {
+  text-decoration: underline;
+  color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  #nav-mobile {
+    display: block;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container #navbar {
+    margin-top: 68px;
+    margin-bottom: -68px;
+    display: none;
+    width: 100%;
+  }
+  .container #navbar .logo {
+    display: none;
+  }
+  .container #navbar .list {
+    padding: 20px 0;
+  }
+  .container #navbar .contact {
+    display: none;
+  }
+  .container .content {
+    width: 100%;
+    margin-top: 68px;
+  }
+  .container .content .name-title {
+    font-size: 20px;
+  }
+  .container .content .name-title i {
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  .container .content header {
+    padding: 0;
+  }
+  .container .content header .text h1 {
+    font-size: 32px;
+  }
+  .container .content header .text h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .container .content header .text button {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+  .container .content .items-list .items .item {
+    width: 50%;
+    padding: 0 6px;
+  }
+  .container .content .subscribe .sub-title {
+    font-size: 24px;
+    margin: 0;
+  }
+  .container .content .subscribe p {
+    font-size: 12px;
+  }
+  .container .content .subscribe input {
+    font-size: 14px;
+  }
+  .container .content .subscribe button {
+    font-size: 14px;
+  }
+  .container footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 20px 0;
+    grid-gap: 20px;
+  }
+  .container footer .about a {
+    margin-bottom: 4px;
+  }
+  .container footer .store {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

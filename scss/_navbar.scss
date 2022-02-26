@@ -1,0 +1,89 @@
+#nav-mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  .nav-mobile-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 16px;
+    h3 {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: 6px;
+      line-height: 1.5;
+    }
+    i {
+      font-size: 20px;
+    }
+  }
+}
+#navbar {
+  width: 20%;
+  .logo {
+    padding: 16px;
+    h3 {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 32px;
+      font-weight: 500;
+      letter-spacing: 6px;
+      line-height: 1.5;
+    }
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 64px 0;
+    text-align: left;
+    a {
+      font-size: 16px;
+      color: #999;
+      padding: 8px 16px;
+      &:hover {
+        background-color: #ccc !important;
+        color: black;
+      }
+    }
+    .active {
+      color: black;
+      i {
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+    }
+    .list-inside {
+      display: flex;
+      flex-direction: column;
+      padding-left: 24px;
+
+      a {
+        font-size: 14px !important;
+      }
+      .active-inside {
+        color: black;
+        background-color: #f1f1f1;
+      }
+    }
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    a {
+      font-weight: 300;
+      line-height: 1.5;
+      color: black;
+      font-size: 16px;
+      padding: 8px 16px;
+      &:hover {
+        font-weight: 500;
+      }
+    }
+  }
+}
